@@ -39,6 +39,10 @@
       "before",
       "describe",
       "it"
+    ],
+    "ignore": [
+      "components/click-me/_package",
+      "components/hello-world/_package"
     ]
   }
 }
