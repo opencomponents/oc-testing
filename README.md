@@ -3,9 +3,9 @@ oc-testing [![Build Status](https://secure.travis-ci.org/opentable/oc-testing.pn
 
 Code examples for testing [OC components](https://github.com/opentable/oc).
 
-* Uses mocha + chai for unit testing a components' server.js
-* Uses mocha + chai + request for acceptance testing a components' API
-* Uses mocha + chai + nightmarejs for ui testing a components' UI
+* Uses mocha + chai for unit testing a component's server.js
+* Uses mocha + chai + request for acceptance testing a component's API
+* Uses mocha + chai + nightmarejs for ui testing a component's UI
 
 ### Getting in touch
 
