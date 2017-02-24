@@ -1,7 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Hello Superman 1`] = `"{\\"type\\":\\"oc-component-local\\",\\"version\\":\\"1.0.0\\",\\"requestVersion\\":\\"\\",\\"name\\":\\"hello-world\\",\\"renderMode\\":\\"rendered\\",\\"href\\":\\"http://localhost:3030/hello-world?name=Superman\\",\\"html\\":\\"<div>Hello Superman</div>\\"}"`;
-
 exports[`when name is "" 1`] = `
 Object {
   "name": "John Doe",

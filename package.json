@@ -4,10 +4,12 @@
   "description": "Code examples for testing OC components",
   "main": "index.js",
   "scripts": {
-    "start": "oc dev components 3030",
-    "test": "standard && npm run jest && mocha --timeout=20000",
     "jest": "jest -u --coverage",
-    "jest:watch": "jest --watch"
+    "jest:watch": "jest --watch",
+    "mocha": "mocha --timeout=5000",
+    "standard": "standard",
+    "start": "oc dev components 3030",
+    "test": "npm run standard && npm run jest && npm run mocha"
   },
   "repository": {
     "type": "git",

@@ -1,5 +1,3 @@
-import nightmare from 'nightmare';
-
 import 'babel-core/register';
 import 'babel-polyfill';
 
@@ -21,14 +19,4 @@ scenarios.forEach((scenario) => {
       expect(model).toMatchSnapshot();
     });
   });
-});
-
-// ui
-const name = 'Superman';
-
-test.skip(`Hello ${name}`, async () => {
-  const page = nightmare().goto(`http://localhost:3030/hello-world/?name=${name}`);
-  const text = await page.evaluate(() => document.body.textContent).end();
-  expect(text).toContain(`Hello ${name}`);
-  expect(text).toMatchSnapshot();
 });
