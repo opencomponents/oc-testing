@@ -26,7 +26,7 @@ scenarios.forEach((scenario) => {
 // ui
 const name = 'Superman';
 
-test(`Hello ${name}`, async () => {
+test.skip(`Hello ${name}`, async () => {
   const page = nightmare().goto(`http://localhost:3030/hello-world/?name=${name}`);
   const text = await page.evaluate(() => document.body.textContent).end();
   expect(text).toContain(`Hello ${name}`);
