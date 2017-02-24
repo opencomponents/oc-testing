@@ -8,11 +8,16 @@
 
 - [X] Add babel (and deps)
 
+- [X] Unit test(s) hello-world
+
+- [X] UI test(s) hello-world
+
 - [ ] ...
 
 ## How to
 
 ```bash
 yarn
+yarn start // info: on a separate terminal window
 yarn jest
 ```
