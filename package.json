@@ -56,7 +56,8 @@
     ],
     "ignore": [
       "components/click-me/_package",
-      "components/hello-world/_package"
+      "components/hello-world/_package",
+      "*.spec.js"
     ]
   }
 }
