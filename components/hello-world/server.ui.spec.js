@@ -14,9 +14,9 @@ const BASE_URL = url.format({
   port: process.env.PORT || PORT
 });
 
-const name = 'Superman';
+const SUPERMAN = 'Superman';
 
-test(`Hello ${name}`, async () => {
+test(`Hello ${SUPERMAN}`, async () => {
   const registry = new oc.Registry({
     baseUrl: `${BASE_URL}/`,
     local: true,
@@ -30,12 +30,12 @@ test(`Hello ${name}`, async () => {
 
   registry.start();
 
-  const page = nightmare({ show: true }).goto(`${BASE_URL}/hello-world/~preview?name=${name}`);
+  const page = nightmare({ show: true }).goto(`${BASE_URL}/hello-world/~preview?name=${SUPERMAN}`);
   const text = await page
     .wait(1000)
     .end()
     .evaluate(() => document.body.textContent);
-  expect(text).toContain(`Hello ${name}`);
+  expect(text).toContain(`Hello ${SUPERMAN}`);
   expect(text).toMatchSnapshot();
 
   registry.close();
