@@ -16,7 +16,7 @@ const BASE_URL = url.format({
 
 const SUPERMAN = 'Superman';
 
-test(`Hello ${SUPERMAN}`, async () => {
+test.skip(`Hello ${SUPERMAN}`, async () => {
   const registry = new oc.Registry({
     baseUrl: `${BASE_URL}/`,
     local: true,
