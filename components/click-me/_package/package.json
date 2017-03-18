@@ -1,0 +1,19 @@
+{
+  "name": "click-me",
+  "description": "",
+  "version": "1.0.0",
+  "repository": "",
+  "oc": {
+    "files": {
+      "template": {
+        "type": "jade",
+        "hashKey": "7b25b0fa261100786601bcb96b93b7bbb35607f1",
+        "src": "template.js"
+      },
+      "static": []
+    },
+    "version": "0.35.3",
+    "packaged": true,
+    "date": 1489837363287
+  }
+}

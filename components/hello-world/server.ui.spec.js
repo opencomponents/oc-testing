@@ -1,9 +1,9 @@
+import 'babel-core/register';
+import 'babel-polyfill';
 import nightmare from 'nightmare';
 import oc from 'oc';
 import path from 'path';
 import url from 'url';
-import 'babel-core/register';
-import 'babel-polyfill';
 
 // ui
 const PORT = 3030;
@@ -16,7 +16,7 @@ const BASE_URL = url.format({
 
 const SUPERMAN = 'Superman';
 
-test.skip(`Hello ${SUPERMAN}`, async () => {
+test(`Hello ${SUPERMAN}`, async () => {
   const registry = new oc.Registry({
     baseUrl: `${BASE_URL}/`,
     local: true,
