@@ -5,6 +5,9 @@ addons:
     packages:
       - xvfb
 
+before_script:
+  - "npm install -g npm@3"
+
 node_js:
   - "4"
   - "5"
