@@ -1,3 +1,5 @@
+/* eslint-disable strict, semi, one-var, one-var-declaration-per-line, arrow-parens */
+
 'use strict'
 
 const expect = require('chai').expect
@@ -36,8 +38,8 @@ describe('ui testing a component', () => {
           .click('.plus')
           .click('.minus')
           .click('.plus')
-          .evaluate(() => parseInt(document.querySelector('#counter').innerHTML, 10))
           .end()
+          .evaluate(() => parseInt(document.querySelector('#counter').innerHTML, 10))
           .then((result) => {
             counter = result
             done()

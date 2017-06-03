@@ -14,13 +14,13 @@
       },
       "dataProvider": {
         "type": "node.js",
-        "hashKey": "a598ac5eb0718a43f83c5a103435fad60b210edd",
+        "hashKey": "71903fec5d82b1bfc94a31c0d2a294aba5e8f8d5",
         "src": "server.js"
       },
       "static": []
     },
-    "version": "0.35.2",
+    "version": "0.35.3",
     "packaged": true,
-    "date": 1487158242628
+    "date": 1489837363384
   }
 }

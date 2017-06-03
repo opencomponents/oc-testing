@@ -69,13 +69,16 @@ module.exports =
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
 
 module.exports.data = function (context, callback) {
   callback(null, {
     name: context.params.name || 'John Doe'
-  });
-};
+  }); // eslint-disable-line semi
+}; // eslint-disable-line semi
 
 /***/ })
 /******/ ]);
