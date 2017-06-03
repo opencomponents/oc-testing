@@ -1,4 +1,4 @@
-oc-testing [![Build Status](https://secure.travis-ci.org/opentable/oc-testing.png?branch=master)](http://travis-ci.org/opentable/oc-testing)
+oc-testing [![Build Status](https://secure.travis-ci.org/opencomponents/oc-testing.png?branch=master)](http://travis-ci.org/opencomponents/oc-testing)
 ==========
 
 Code examples for testing [OC components](https://github.com/opentable/oc).

@@ -5,7 +5,7 @@ Contributes are more than welcome!
 
 ## Troubleshooting
 
-If you find an issue, feel free to check the [issues](https://github.com/opentable/oc-testing/issues) page, and open a new one if you need.
+If you find an issue, feel free to check the [issues](https://github.com/opencomponents/oc-testing/issues) page, and open a new one if you need.
 
 ## Code of Conduct
 
