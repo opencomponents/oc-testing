@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/opentable/oc-testing.git"
+    "url": "git+https://github.com/opencomponents/oc-testing.git"
   },
   "keywords": [
     "opencomponents",
@@ -24,9 +24,9 @@
   "author": "Matteo Figus",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/opentable/oc-testing/issues"
+    "url": "https://github.com/opencomponents/oc-testing/issues"
   },
-  "homepage": "https://github.com/opentable/oc-testing#readme",
+  "homepage": "https://github.com/opencomponents/oc-testing#readme",
   "devDependencies": {
     "babel-core": "^6.24.1",
     "babel-polyfill": "^6.23.0",
