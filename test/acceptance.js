@@ -31,7 +31,7 @@ describe('acceptance testing a component', () => {
           url: 'http://localhost:3030/hello-world',
           json: true
         }, (err, response, body) => {
-          expect(err).to.be.null
+          expect(err).to.equal(null)
           expect(body.html).to.equal('<div>Hello John Doe</div>')
           done()
         })
@@ -44,7 +44,7 @@ describe('acceptance testing a component', () => {
           url: 'http://localhost:3030/hello-world/?name=Jane+Doe',
           json: true
         }, (err, response, body) => {
-          expect(err).to.be.null
+          expect(err).to.equal(null)
           expect(body.html).to.equal('<div>Hello Jane Doe</div>')
           done()
         })

@@ -11,7 +11,7 @@ describe('unit testing a component', () => {
         componentData({
           params: { name: 'Jane Doe' }
         }, (err, viewModel) => {
-          expect(err).to.be.null
+          expect(err).to.equal(null)
           expect(viewModel.name).to.equal('Jane Doe')
           done()
         })
@@ -21,7 +21,7 @@ describe('unit testing a component', () => {
     describe('when not providing name', () => {
       it('name should match default', (done) => {
         componentData({ params: {} }, (err, viewModel) => {
-          expect(err).to.be.null
+          expect(err).to.equal(null)
           expect(viewModel.name).to.equal('John Doe')
           done()
         })

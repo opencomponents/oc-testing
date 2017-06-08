@@ -28,35 +28,25 @@
   },
   "homepage": "https://github.com/opentable/oc-testing#readme",
   "devDependencies": {
-    "babel-core": "^6.23.1",
-    "babel-plugin-transform-async-to-generator": "^6.22.0",
+    "babel-core": "^6.24.1",
     "babel-polyfill": "^6.23.0",
-    "babel-preset-es2015": "^6.24.0",
-    "babel-preset-latest": "^6.22.0",
-    "babel-preset-react": "^6.23.0",
-    "babel-preset-stage-1": "^6.22.0",
-    "chai": "^3.5.0",
-    "eslint": "^3.16.1",
-    "eslint-config-airbnb": "^14.1.0",
-    "eslint-plugin-import": "^2.2.0",
-    "eslint-plugin-jsx-a11y": "^4.0.0",
-    "eslint-plugin-react": "^6.10.0",
-    "jest": "^19.0.2",
-    "mocha": "^3.2.0",
-    "nightmare": "^2.9.1",
-    "request": "^2.79.0",
-    "standard": "^8.6.0"
+    "babel-preset-es2015": "^6.24.1",
+    "chai": "^4.0.2",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^15.0.1",
+    "eslint-plugin-import": "^2.3.0",
+    "eslint-plugin-jsx-a11y": "^5.0.3",
+    "eslint-plugin-react": "^7.0.1",
+    "jest": "^20.0.4",
+    "mocha": "^3.4.2",
+    "nightmare": "^2.10.0",
+    "request": "^2.81.0",
+    "standard": "^10.0.2"
   },
   "dependencies": {
-    "oc": "^0.35.2"
+    "oc": "^0.37.9"
   },
   "standard": {
-    "globals": [
-      "after",
-      "before",
-      "describe",
-      "it"
-    ],
     "ignore": [
       "components/click-me/_package",
       "components/hello-world/_package",
