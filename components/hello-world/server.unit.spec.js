@@ -9,7 +9,7 @@ const scenarios = [
   { name: 'Zlatan Ibrahimović' }
 ];
 
-scenarios.forEach((scenario) => {
+scenarios.forEach(scenario => {
   test(`when name is "${scenario.name}"`, () => {
     const context = { params: { name: scenario.name } };
     data(context, (error, model) => {

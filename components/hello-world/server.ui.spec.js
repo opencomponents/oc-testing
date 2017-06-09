@@ -14,7 +14,7 @@ const BASE_URL = url.format({
 
 const SUPERMAN = 'Superman';
 
-test(`Hello ${SUPERMAN}`, (done) => {
+test(`Hello ${SUPERMAN}`, done => {
   jasmine.DEFAULT_TIMEOUT_INTERVAL = 10000;
   const registry = new oc.Registry({
     baseUrl: `${BASE_URL}/`,
@@ -29,16 +29,14 @@ test(`Hello ${SUPERMAN}`, (done) => {
 
   registry.start();
 
-  const page = nightmare({ show: true }).goto(`${BASE_URL}/hello-world/~preview?name=${SUPERMAN}`);
-  page
-    .wait(1000)
-    .end()
-    .evaluate(() => document.body.textContent)
-    .then((text) => {
-      expect(text).toContain(`Hello ${SUPERMAN}`);
-      expect(text).toMatchSnapshot();
+  const page = nightmare({ show: true }).goto(
+    `${BASE_URL}/hello-world/~preview?name=${SUPERMAN}`
+  );
+  page.wait(1000).end().evaluate(() => document.body.textContent).then(text => {
+    expect(text).toContain(`Hello ${SUPERMAN}`);
+    expect(text).toMatchSnapshot();
 
-      registry.close();
-      done();
-    });
+    registry.close();
+    done();
+  });
 });

@@ -4,6 +4,7 @@
   "description": "Code examples for testing OC components",
   "main": "index.js",
   "scripts": {
+    "prettier": "prettier --single-quote --write \"{components,__tests__}/**/*.js\"",
     "start": "oc dev components 3030",
     "test": "jest",
     "test:coverage": "jest --coverage",
@@ -35,6 +36,7 @@
     "eslint-plugin-react": "^7.0.1",
     "jest": "^20.0.4",
     "nightmare": "^2.10.0",
+    "prettier": "^1.4.4",
     "request": "^2.81.0"
   },
   "dependencies": {

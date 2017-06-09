@@ -5,7 +5,7 @@ const request = require('request');
 describe('acceptance testing a component', () => {
   let registry;
 
-  beforeAll((done) => {
+  beforeAll(done => {
     registry = new oc.Registry({
       baseUrl: 'http://localhost:3030/',
       local: true,
@@ -23,28 +23,34 @@ describe('acceptance testing a component', () => {
 
   describe('hello-world component', () => {
     describe('GET /hello-world', () => {
-      it('should return expected response', (done) => {
-        request({
-          url: 'http://localhost:3030/hello-world',
-          json: true
-        }, (err, response, body) => {
-          expect(err).toBeNull();
-          expect(body.html).toEqual('<div>Hello John Doe</div>');
-          done();
-        });
+      it('should return expected response', done => {
+        request(
+          {
+            url: 'http://localhost:3030/hello-world',
+            json: true
+          },
+          (err, response, body) => {
+            expect(err).toBeNull();
+            expect(body.html).toEqual('<div>Hello John Doe</div>');
+            done();
+          }
+        );
       });
     });
 
     describe('GET /hello-world/?name=Jane+Doe', () => {
-      it('should return expected response', (done) => {
-        request({
-          url: 'http://localhost:3030/hello-world/?name=Jane+Doe',
-          json: true
-        }, (err, response, body) => {
-          expect(err).toBeNull();
-          expect(body.html).toEqual('<div>Hello Jane Doe</div>');
-          done();
-        });
+      it('should return expected response', done => {
+        request(
+          {
+            url: 'http://localhost:3030/hello-world/?name=Jane+Doe',
+            json: true
+          },
+          (err, response, body) => {
+            expect(err).toBeNull();
+            expect(body.html).toEqual('<div>Hello Jane Doe</div>');
+            done();
+          }
+        );
       });
     });
   });

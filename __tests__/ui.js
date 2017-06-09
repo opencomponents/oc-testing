@@ -6,7 +6,7 @@ describe('ui testing a component', () => {
   let registry = null;
   let nightmare = null;
 
-  beforeAll((done) => {
+  beforeAll(done => {
     registry = new oc.Registry({
       baseUrl: 'http://localhost:3030/',
       local: true,
@@ -27,7 +27,7 @@ describe('ui testing a component', () => {
   describe('click-me component', () => {
     describe('when + button clicked twice and - clicked once', () => {
       let counter;
-      beforeAll((done) => {
+      beforeAll(done => {
         nightmare
           .goto('http://localhost:3030/click-me/~preview')
           .wait('oc-component #counter')
@@ -35,8 +35,10 @@ describe('ui testing a component', () => {
           .click('.minus')
           .click('.plus')
           .end()
-          .evaluate(() => parseInt(document.querySelector('#counter').innerHTML, 10))
-          .then((result) => {
+          .evaluate(() =>
+            parseInt(document.querySelector('#counter').innerHTML, 10)
+          )
+          .then(result => {
             counter = result;
             done();
           });
