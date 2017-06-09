@@ -1,7 +1,4 @@
-import 'babel-core/register';
-import 'babel-polyfill';
-
-import { data } from './server';
+const data = require('./server').data;
 
 // unit
 const scenarios = [

@@ -1,7 +1,7 @@
-import nightmare from 'nightmare';
-import oc from 'oc';
-import path from 'path';
-import url from 'url';
+const nightmare = require('nightmare');
+const oc = require('oc');
+const path = require('path');
+const url = require('url');
 
 // ui
 const PORT = 3030;
