@@ -30,7 +30,7 @@ test(`Hello ${SUPERMAN}`, (done) => {
 
   const page = nightmare({ show: true }).goto(`${BASE_URL}/hello-world/~preview?name=${SUPERMAN}`);
   page
-    .wait(2000)
+    .wait(1000)
     .end()
     .evaluate(() => document.body.textContent)
     .then((text) => {
