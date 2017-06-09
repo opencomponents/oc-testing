@@ -15,6 +15,7 @@ const BASE_URL = url.format({
 const SUPERMAN = 'Superman';
 
 test(`Hello ${SUPERMAN}`, (done) => {
+  jasmine.DEFAULT_TIMEOUT_INTERVAL = 10000;
   const registry = new oc.Registry({
     baseUrl: `${BASE_URL}/`,
     local: true,
