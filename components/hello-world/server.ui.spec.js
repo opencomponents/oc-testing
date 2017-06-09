@@ -1,5 +1,3 @@
-import 'babel-core/register';
-import 'babel-polyfill';
 import nightmare from 'nightmare';
 import oc from 'oc';
 import path from 'path';
@@ -16,7 +14,7 @@ const BASE_URL = url.format({
 
 const SUPERMAN = 'Superman';
 
-test(`Hello ${SUPERMAN}`, async () => {
+test(`Hello ${SUPERMAN}`, (done) => {
   const registry = new oc.Registry({
     baseUrl: `${BASE_URL}/`,
     local: true,
@@ -31,13 +29,15 @@ test(`Hello ${SUPERMAN}`, async () => {
   registry.start();
 
   const page = nightmare({ show: true }).goto(`${BASE_URL}/hello-world/~preview?name=${SUPERMAN}`);
-  const text = await page
+  page
     .wait(2000)
     .end()
-    .evaluate(() => document.body.textContent);
+    .evaluate(() => document.body.textContent)
+    .then((text) => {
+      expect(text).toContain(`Hello ${SUPERMAN}`);
+      expect(text).toMatchSnapshot();
 
-  expect(text).toContain(`Hello ${SUPERMAN}`);
-  expect(text).toMatchSnapshot();
-
-  registry.close();
+      registry.close();
+      done();
+    });
 });
