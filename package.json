@@ -5,7 +5,6 @@
   "main": "index.js",
   "scripts": {
     "precommit": "lint-staged",
-    "prettier": "prettier --single-quote --write \"{components,__tests__}/**/*.js\"",
     "start": "oc dev components 3030",
     "test": "jest",
     "test:coverage": "jest --coverage",
@@ -38,7 +37,6 @@
     "jest-cli": "^20.0.4",
     "lint-staged": "^3.6.1",
     "nightmare": "^2.10.0",
-    "prettier": "^1.4.4",
     "prettier-eslint": "^6.3.0",
     "request": "^2.81.0"
   },
@@ -47,7 +45,7 @@
   },
   "lint-staged": {
     "*.js": [
-      "prettier-eslint --single-quote --write",
+      "prettier-eslint --single-quote --write \"{components,__tests__}/**/*.js\"",
       "git add"
     ]
   }
