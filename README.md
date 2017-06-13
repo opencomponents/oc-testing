@@ -13,10 +13,20 @@ In case you have any questions, open an issue.
 
 ### Running the tests
 
+#### Yarn
+
 ```bash
 yarn
 yarn test:coverage
 ```
 
+#### Npm
+
+```bash
+npm i
+npm run test:coverage
+```
+
 ### License
+
 MIT
