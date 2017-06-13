@@ -4,6 +4,7 @@
   "description": "Code examples for testing OC components",
   "main": "index.js",
   "scripts": {
+    "precommit": "lint-staged",
     "prettier": "prettier --single-quote --write \"{components,__tests__}/**/*.js\"",
     "start": "oc dev components 3030",
     "test": "jest",
@@ -41,5 +42,11 @@
   },
   "dependencies": {
     "oc": "^0.37.10"
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier-eslint --single-quote --write",
+      "git add"
+    ]
   }
 }
