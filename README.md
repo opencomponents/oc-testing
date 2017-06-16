@@ -30,3 +30,7 @@ npm run test:coverage
 ### License
 
 MIT
+
+### Test
+
+Husky
