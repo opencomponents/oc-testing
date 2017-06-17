@@ -7,9 +7,7 @@ const scenarios = [
   { name: '' },
   { name: 'Jane Doe' },
   { name: 'Zlatan Ibrahimović' },
-  {
-    name: 'Tony Stark'
-  }
+  { name: 'Tony Stark' }
 ];
 
 scenarios.forEach(scenario => {

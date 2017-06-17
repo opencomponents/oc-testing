@@ -12,6 +12,12 @@ Object {
 }
 `;
 
+exports[`when name is "Tony Stark" 1`] = `
+Object {
+  "name": "Tony Stark",
+}
+`;
+
 exports[`when name is "Zlatan Ibrahimović" 1`] = `
 Object {
   "name": "Zlatan Ibrahimović",
