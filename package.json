@@ -4,8 +4,11 @@
   "description": "Code examples for testing OC components",
   "main": "index.js",
   "scripts": {
+    "precommit": "lint-staged",
     "start": "oc dev components 3030",
-    "test": "standard && mocha --timeout=20000"
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "test:watch": "jest --watch"
   },
   "repository": {
     "type": "git",
@@ -24,25 +27,26 @@
   },
   "homepage": "https://github.com/opencomponents/oc-testing#readme",
   "devDependencies": {
-    "chai": "^3.5.0",
-    "mocha": "^3.2.0",
-    "nightmare": "^2.9.1",
-    "request": "^2.79.0",
-    "standard": "^8.6.0"
+    "babel-preset-latest": "^6.24.1",
+    "eslint": "3.19.0",
+    "eslint-config-airbnb": "^15.0.1",
+    "eslint-plugin-import": "^2.3.0",
+    "eslint-plugin-jsx-a11y": "^5.0.3",
+    "eslint-plugin-react": "^7.0.1",
+    "husky": "^0.13.4",
+    "jest-cli": "^20.0.4",
+    "lint-staged": "^3.6.1",
+    "nightmare": "^2.10.0",
+    "prettier-eslint-cli": "^4.1.1",
+    "request": "^2.81.0"
   },
   "dependencies": {
-    "oc": "^0.37.6"
+    "oc": "^0.37.10"
   },
-  "standard": {
-    "globals": [
-      "after",
-      "before",
-      "describe",
-      "it"
-    ],
-    "ignore": [
-      "components/click-me/_package",
-      "components/hello-world/_package"
+  "lint-staged": {
+    "*.js": [
+      "prettier-eslint --single-quote --write \"{components,__tests__}/**/*.js\"",
+      "git add"
     ]
   }
 }

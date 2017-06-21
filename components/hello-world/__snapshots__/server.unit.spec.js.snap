@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`when name is "" 1`] = `
+Object {
+  "name": "John Doe",
+}
+`;
+
+exports[`when name is "Jane Doe" 1`] = `
+Object {
+  "name": "Jane Doe",
+}
+`;
+
+exports[`when name is "Tony Stark" 1`] = `
+Object {
+  "name": "Tony Stark",
+}
+`;
+
+exports[`when name is "Zlatan Ibrahimović" 1`] = `
+Object {
+  "name": "Zlatan Ibrahimović",
+}
+`;
+
+exports[`when name is "null" 1`] = `
+Object {
+  "name": "John Doe",
+}
+`;
+
+exports[`when name is "undefined" 1`] = `
+Object {
+  "name": "John Doe",
+}
+`;

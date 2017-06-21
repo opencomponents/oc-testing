@@ -4,22 +4,22 @@ button.minus -
 button.plus +
 
 script.
-	window.oc = window.oc || {};
-	oc.cmd = oc.cmd || [];
+  window.oc = window.oc || {};
+  oc.cmd = oc.cmd || [];
 
-	oc.cmd.push(() => {
+  oc.cmd.push(() => {
 
-		let counter = jQuery('#counter'), c = 0
+    let counter = jQuery('#counter'), c = 0
 
-		const refresh = () => counter.text(c)
-		
-		jQuery('.minus').click(() => {
-			c -= 1
-			refresh()
-		})
+    const refresh = () => counter.text(c)
+    
+    jQuery('.minus').click(() => {
+      c -= 1
+      refresh()
+    })
 
-		jQuery('.plus').click(() => {
-			c += 1
-			refresh()
-		})
-	})
+    jQuery('.plus').click(() => {
+      c += 1
+      refresh()
+    })
+  })

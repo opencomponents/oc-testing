@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Hello Superman 1`] = `
+"Hello Supermanwindow.oc = window.oc || {};
+oc.conf = oc.conf || {};
+oc.conf.templates = oc.conf.templates || [];
+oc.conf.templates = oc.conf.templates.concat([{\\"type\\":\\"oc-template-jade\\",\\"version\\":\\"4.0.2\\",\\"externals\\":[{\\"global\\":\\"jade\\",\\"url\\":\\"https://cdnjs.cloudflare.com/ajax/libs/jade/1.11.0/runtime.min.js\\"}]},{\\"type\\":\\"oc-template-handlebars\\",\\"version\\":\\"4.0.1\\",\\"externals\\":[{\\"global\\":\\"Handlebars\\",\\"url\\":\\"https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.runtime.min.js\\"}]}]);"
+`;
