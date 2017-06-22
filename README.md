@@ -1,6 +1,8 @@
 oc-testing [![Build Status](https://secure.travis-ci.org/opencomponents/oc-testing.png?branch=master)](http://travis-ci.org/opencomponents/oc-testing)
 ==========
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/opencomponents/oc-testing.svg)](https://greenkeeper.io/)
+
 Code examples for testing [OC components](https://github.com/opentable/oc).
 
 * Uses Jest for unit testing a component's server.js
