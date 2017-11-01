@@ -41,7 +41,7 @@
     "request": "^2.81.0"
   },
   "dependencies": {
-    "oc": "^0.38.0"
+    "oc": "^0.41.15"
   },
   "lint-staged": {
     "*.js": [
