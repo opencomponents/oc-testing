@@ -11,6 +11,7 @@ before_install:
 node_js:
   - "6"
   - "7"
+  - "10"
 
 notifications:
   email: false
