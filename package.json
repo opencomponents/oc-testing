@@ -34,7 +34,7 @@
     "eslint-plugin-jsx-a11y": "^5.0.3",
     "eslint-plugin-react": "^7.0.1",
     "husky": "^0.14.0",
-    "jest-cli": "^20.0.4",
+    "jest-cli": "^23.0.0",
     "lint-staged": "^5.0.0",
     "nightmare": "^3.0.0",
     "prettier-eslint-cli": "^4.1.1",
