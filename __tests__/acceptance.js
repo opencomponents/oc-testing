@@ -7,9 +7,9 @@ describe('acceptance testing a component', () => {
 
   beforeAll(done => {
     registry = new oc.Registry({
-      baseUrl: 'http://localhost:3030/',
+      baseUrl: 'http://localhost:3032/',
       local: true,
-      port: 3030,
+      port: 3032,
       hotReloading: false,
       path: path.resolve('./components'),
       env: { name: 'local' },
@@ -26,7 +26,7 @@ describe('acceptance testing a component', () => {
       it('should return expected response', done => {
         request(
           {
-            url: 'http://localhost:3030/hello-world',
+            url: 'http://localhost:3032/hello-world',
             json: true
           },
           (err, response, body) => {
@@ -42,7 +42,7 @@ describe('acceptance testing a component', () => {
       it('should return expected response', done => {
         request(
           {
-            url: 'http://localhost:3030/hello-world/?name=Jane+Doe',
+            url: 'http://localhost:3032/hello-world/?name=Jane+Doe',
             json: true
           },
           (err, response, body) => {

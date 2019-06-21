@@ -8,9 +8,9 @@ describe('ui testing a component', () => {
 
   beforeAll(done => {
     registry = new oc.Registry({
-      baseUrl: 'http://localhost:3030/',
+      baseUrl: 'http://localhost:3031/',
       local: true,
-      port: 3030,
+      port: 3031,
       hotReloading: false,
       path: path.resolve('./components'),
       env: { name: 'local' },
@@ -29,7 +29,7 @@ describe('ui testing a component', () => {
       let counter;
       beforeAll(done => {
         nightmare
-          .goto('http://localhost:3030/click-me/~preview')
+          .goto('http://localhost:3031/click-me/~preview')
           .wait('oc-component #counter')
           .click('.plus')
           .click('.minus')

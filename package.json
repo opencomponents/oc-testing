@@ -27,21 +27,15 @@
   },
   "homepage": "https://github.com/opencomponents/oc-testing#readme",
   "devDependencies": {
-    "babel-preset-latest": "^6.24.1",
-    "eslint": "4.3.0",
-    "eslint-config-airbnb": "^16.0.0",
-    "eslint-plugin-import": "^2.3.0",
-    "eslint-plugin-jsx-a11y": "^5.0.3",
-    "eslint-plugin-react": "^7.0.1",
     "husky": "^0.14.0",
-    "jest-cli": "^20.0.4",
+    "jest-cli": "^24.8.0",
     "lint-staged": "^5.0.0",
     "nightmare": "^3.0.0",
     "prettier-eslint-cli": "^4.1.1",
     "request": "^2.81.0"
   },
   "dependencies": {
-    "oc": "^0.38.0"
+    "oc": "^0.48.1"
   },
   "lint-staged": {
     "*.js": [
